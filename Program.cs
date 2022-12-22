@@ -1,2 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 64: Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1. 
+// Выполнить с помощью рекурсии.
+// N = 5 -> "5, 4, 3, 2, 1"
+// N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
+
+Console.Write("Введите положительное число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num > 0)
+{
+    int n = 0;
+    for (n = num; n > 1; n--)
+    {
+        Console.Write($"{n}, ");
+    }
+    Console.WriteLine($"{n}");
+}
+else Console.WriteLine("Вы ввели не положительное число.");
